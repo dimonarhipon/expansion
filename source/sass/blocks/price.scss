@@ -1,0 +1,166 @@
+.price {
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 89px;
+  }
+}
+
+.price__wrapper {
+  @media (min-width: $tablet) {
+    margin-left: 111px;
+    margin-right: 124px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 455px;
+    margin-right: 279px;
+  }
+}
+
+.price__heading {
+  @include h2;
+
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+
+.price__wrap {
+  @include container;
+
+  padding-top: 28px;
+  padding-bottom: 38px;
+  text-align: center;
+  color: $lighten;
+  background: linear-gradient(180deg, $pink -52.72%, $pink-2 -20.83%, $red 73.24%);
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet) {
+    max-width: 966px;
+
+    padding-top: 18px;
+    padding-left: 95px;
+    padding-right: 93px;
+    padding-bottom: 32px;
+    border-radius: 8px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 966px;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-left: 208px;
+    padding-right: 206px;
+    padding-bottom: 65px;
+  }
+}
+
+.price__name {
+  @include h3(32px, 1, $lighten, 19px);
+
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+}
+
+.price__count {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 64px;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: $lighten;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 64px;
+    margin-bottom: 17px;
+  }
+}
+
+.price__text {
+  @include text(0.9, $lighten, 20px);
+
+  font-weight: normal;
+
+
+  @media (min-width: $tablet) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 356px;
+    margin-bottom: 17px;
+  }
+}
+
+.price__list {
+  @include list;
+
+  color: $lighten;
+}
+
+.price__item {
+  @include flex;
+
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 4px;
+  padding-left: 15px;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $lighten;
+  }
+}
+
+.price__element {
+  @include text(1, $lighten);
+
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.price__value {
+  @include text(1, $lighten, 28px);
+
+  margin-bottom: 0;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}

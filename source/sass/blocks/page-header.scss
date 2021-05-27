@@ -1,0 +1,29 @@
+.page-header {
+  position: relative;
+  padding-top: 36px;
+  margin-bottom: 183px;
+  background-color: transparent;
+
+  @media (min-width: $tablet) {
+    padding-top: 41px;
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 63px;
+    margin-bottom: 136px
+  }
+}
+
+.page-header__wrapper {
+  @include container;
+  @include flex;
+
+  @media (min-width: $tablet) {
+
+  }
+
+  @media (min-width: $desktop) {
+
+  }
+}

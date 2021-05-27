@@ -1,0 +1,39 @@
+.traffic-growth {
+  @include container;
+
+  box-sizing: border-box;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 23px;
+    padding-top: 30px;
+    padding-left: 38px;
+    padding-right: 19px;
+    padding-bottom: 27px;
+
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 50px;
+    padding-top: 46px;
+    padding-left: 34px;
+    padding-right: 76px;
+    padding-bottom: 59px;
+  }
+}
+
+.traffic-growth__heading {
+  @include h3(19px, 0.9);
+
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet) {
+    @include h3(21px, 1, $blue, 18px);
+  }
+
+  @media (min-width: $desktop) {
+    @include h3(28px, 1, $blue, 24px);
+  }
+}

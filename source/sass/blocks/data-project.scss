@@ -1,0 +1,129 @@
+.data-project {
+  @include container;
+}
+
+.data-project__heading {
+  @include h2;
+
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet) {
+    font-size: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 27px;
+    font-size: 34px;
+  }
+}
+
+.data-project__wrapper {
+  @include flex;
+
+  align-items: flex-start;
+}
+
+.data-project__inner {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet) {
+    max-width: 420px;
+    margin-bottom: 0;
+  }
+}
+
+.data-project__wrap {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.data-project__title {
+  @include h3(28px, 0.9);
+  margin-bottom: 2px;
+  text-align: left;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+}
+
+.data-project__tasks {
+  @include list;
+}
+
+.data-project__list {
+  @include text(0.8, $blue-2, 26px);
+
+  margin: 0;
+  margin-left: 25px;
+  padding: 0;
+}
+
+.data-project__element {
+  @include flex(flex-start);
+
+  flex-wrap: nowrap;
+}
+
+.data-project__icon {
+  min-width: 11px;
+  margin-right: 13px;
+
+  @media (min-width: $tablet) {
+    margin-right: 12px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 15px;
+    height: 10px;
+    margin-right: 10px;
+  }
+}
+
+.data-project__text {
+  @include text(0.8, $blue-2, 26px);
+
+  margin-bottom: 0;
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+  }
+}
+
+.data-project__item {
+  margin-bottom: 1px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 2px;
+  }
+}
+
+.data-project__link {
+  @include text(0.8, $blue-2, 26px);
+
+  margin-bottom: 0;
+  text-decoration: none;
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,158 @@
+.features {
+  margin-bottom: 32px;
+  background-color: $lighten;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 60px;
+  }
+}
+
+.features__heading {
+  @include h2;
+
+  font-size: 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 31px;
+    font-size: 34px;
+  }
+}
+
+.features__wrap {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-image:
+    linear-gradient(297.24deg, $blue-9 8.25%, $red 91.76%);
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
+    padding-bottom: 30px;
+    background-size: 100% 318px;
+    background-position: center;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 60px;
+    background-size: 100% 519px;
+  }
+}
+
+.features__list {
+  @include list;
+  @include flex(center);
+
+  @media (min-width: $tablet) {
+    @include container;
+
+    max-width: 910px;
+    justify-content: space-between;
+  }
+}
+
+.features__item {
+  position: relative;
+  width: 228px;
+  min-height: 225px;
+
+  box-sizing: border-box;
+  padding: 25px;
+  padding-right: 10px;
+  padding-bottom: 21px;
+  margin-bottom: 18px;
+
+  border-radius: 19px;
+  background-color: $lighten;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    left: 25px;
+    bottom: 21px;
+
+    width: 33px;
+    height: 2px;
+    background-color: $blue;
+  }
+
+  &:nth-child(2n)::before {
+    background-color: $red;
+  }
+
+  @media (min-width: $tablet) {
+    padding-bottom: 28px;
+    box-shadow:
+    0px 10px 48px rgba(33, 12, 56, 0.1);
+  }
+
+  @media (min-width: $desktop) {
+    width: 371px;
+    min-height: 368px;
+
+    margin-bottom: 28px;
+    padding: 42px;
+    padding-bottom: 45px;
+
+    &::before {
+      width: 52px;
+      height: 3px;
+      left: 42px;
+      bottom: 44px;
+    }
+  }
+}
+
+.features__inner {
+  @include flex(flex-start);
+
+  margin-bottom: 27px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 43px;
+  }
+}
+
+.features__images {
+  margin-right: 11px;
+
+  @media (min-width: $tablet) {
+    margin-right: 12px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 73px;
+    height: 73px;
+    margin-right: 35px;
+  }
+}
+
+.features__name {
+  @include h3(24px, 1, $blue, 14px);
+
+  margin-top: 0;
+  margin-bottom: 3px;
+
+  @media (min-width: $desktop) {
+    @include h3(24px, 1, $blue, 18px);
+  }
+}
+
+.features__text {
+  @include text;
+
+  margin-bottom: 10px;
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+  }
+}

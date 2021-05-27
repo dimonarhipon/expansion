@@ -1,0 +1,21 @@
+.cases {
+  @include container;
+
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 50px;
+  }
+}
+
+.cases__heading {
+  @include h2;
+
+  margin-bottom: 20px;
+  font-size: 20px;
+
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
+}

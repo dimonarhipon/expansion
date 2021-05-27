@@ -1,0 +1,9 @@
+.page-footer {
+  display: none;
+  color: $lighten;
+  background-color: $blue-4;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}

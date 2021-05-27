@@ -1,0 +1,22 @@
+.socials__title {
+  @include h5;
+
+  margin-bottom: 9px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 10px;
+  }
+}
+
+.socials__list {
+  @include list;
+  @include flex;
+
+  justify-content: flex-start;
+}
+
+.socials__item {
+  &:not(:last-child) {
+    margin-right: 9px;
+  }
+}

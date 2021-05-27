@@ -1,0 +1,156 @@
+.case {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    @include flex;
+
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+.case__content {
+  text-align: center;
+  padding-top: 34px;
+  padding-left: 37px;
+  padding-right: 23px;
+
+  @media (min-width: $tablet) {
+    min-width: 318px;
+    width: 100%;
+    padding-top: 41px;
+    padding-right: 30px;
+    padding-left: 42px;
+    padding-bottom: 40px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 466px;
+    padding-top: 65px;
+    padding-right: 68px;
+    padding-left: 66px;
+    padding-bottom: 78px;
+  }
+}
+
+.case__title {
+  @include h3;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 14px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 32px;
+  }
+}
+
+.case__text {
+  @include text;
+
+  margin-bottom: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 18px;
+  }
+}
+
+.case__icon {
+  position: relative;
+  color: $lighten;
+  fill: $red;
+
+  transform: scale(-1);
+
+  @media (min-width: $tablet) {
+    width: 34px;
+    height: 34px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.case__visual {
+  position: relative;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    min-width: 330px;
+    width: 100%;
+  }
+}
+
+.case__image {
+  @include image;
+
+  @media (min-width: $tablet) {
+    width: 330px;
+    height: 275px;
+    border-radius: 5px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 570px;
+    height: 370px;
+  }
+}
+
+.case__play {
+  @include button-clear;
+
+  width: 63px;
+  height: 63px;
+
+  position: absolute;
+  top: 98px;
+  left: 135px;
+  background-color: transparent;
+
+  @media (min-width: $tablet) {
+    top: 97px;
+    left: 124px;
+
+    width: 82px;
+    height: 82px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 116px;
+    left: 224px;
+
+    width: 123px;
+    height: 123px;
+  }
+}
+
+.case__play-icon {
+  width: 63px;
+  height: 63px;
+
+  @media (min-width: $tablet) {
+    width: 82px;
+    height: 82px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 123px;
+    height: 123px;
+  }
+}

@@ -1,0 +1,22 @@
+.analitics__wrapper {
+  @media (min-width: $tablet) {
+    @include container;
+    @include flex;
+  }
+}
+
+.analitics__heading {
+  @include container;
+  @include h2(45px, 1, $blue, 20px);
+
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 29px;
+    font-size: 34px;
+  }
+}

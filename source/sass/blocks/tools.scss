@@ -1,0 +1,129 @@
+.tools {
+  @include container;
+
+  max-width: 621px;
+
+  @media (min-width: $tablet) {
+    max-width: 834px;
+    padding-top: 30px;
+    background-color: $gray;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 1170px;
+    box-sizing: border-box;
+
+    padding-top: 23px;
+    padding-left: 158px;
+    padding-right: 178px;
+    padding-bottom: 51px;
+  }
+}
+
+.tools__title {
+  @include h3(20px, 1, $blue, 19px);
+
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+    margin-bottom: 26px;
+  }
+}
+
+.tools__wrapper {
+  padding-top: 4px;
+  padding-left: 18px;
+  padding-right: 12px;
+  padding-bottom: 28px;
+
+  background-color: $gray;
+}
+
+.tools__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tools__row {
+  @include flex(flex-start);
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100%;
+  min-height: 50px;
+  box-sizing: border-box;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-top: 4px;
+
+  border-radius: 6px;
+  background-color: transparent;
+
+  &:nth-child(2n) {
+    background-color: $lighten;
+  }
+
+  &--head {
+    flex-direction: row;
+    text-transform: uppercase;
+    background-color: $lighten;
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    min-height: 32px;
+    padding-left: 21px;
+    padding-right: 21px;
+
+    &--head {
+      display: flex;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 48px;
+  }
+}
+
+.tools__ceil {
+  @include text(1, $blue-8, 20px);
+
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: bold;
+
+  &:nth-child(2n) {
+    font-weight: normal;
+  }
+
+  @media (min-width: $tablet) {
+    width: 48%;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  @media (min-width: $desktop) {
+
+  }
+}
+
+.tools__ceil--head {
+  vertical-align: middle;
+}
+
+.tools__extra {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}

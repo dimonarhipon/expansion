@@ -1,0 +1,92 @@
+.oval {
+  width: 29px;
+  height: 29px;
+}
+
+.arrow {
+  width: 7px;
+  height: 11px;
+}
+
+.slider__button {
+  @include button-clear;
+}
+
+.slider__arrow {
+  position: relative;
+  color: $lighten;
+  fill: $red;
+
+  &--next {
+    transform: scale(-1);
+  }
+
+  &:hover {
+    color: $red;
+    fill: $lighten;
+  }
+
+  @media (min-width: $tablet) {
+    width: 34px;
+    height: 34px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.slider__control {
+  @include container;
+
+  display: flex;
+  align-items: center;
+}
+
+.swiper-pagination {
+  position: static;
+  max-width: 56px;
+  width: 100%;
+
+  &--white {
+    color: $lighten
+  }
+  &--white .swiper-pagination-current {
+    color: $lighten;
+  }
+}
+
+.swiper-pagination-current {
+  font-family: "Roboto", "Arial", sans-serif;
+  color: $blue;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.swiper-pagination-total {
+  color: $gray-5;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.swiper-scrollbar {
+  height: 1px;
+  width: 100%;
+  background-color: $gray-5;
+
+  &--white {
+    background-color: $lighten;
+  }
+}
+
+.swiper-scrollbar  .swiper-scrollbar-drag {
+  position: relative;
+  top: -1px;
+  background: $red;
+  height: 2px;
+}
+
+.rating__slider .swiper-wrapper {
+  max-width: 1170px
+}

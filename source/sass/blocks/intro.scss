@@ -1,0 +1,299 @@
+.intro {
+  margin-bottom: 46px;
+
+  background-image:
+    url("../images/intro-card-4-tablet.png"),
+    url("../images/intro-card-4-tablet.png"),
+    url("../images/intro-card-2-mobile.png"),
+    url("../images/intro-card-2-mobile.png"),
+    url("../images/intro-bg-ornament.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position:
+    top 24px right -102px,
+    top 121px right -59px,
+    top -115px right -52px,
+    top 38px right 16px,
+    149px -20px;
+  background-size:
+    117px 124px,
+    117px 124px,
+    187px 199px,
+    187px 199px,
+    633px 451px;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../images/intro-card-4-tablet@2x.png"),
+      url("../images/intro-card-4-tablet@2x.png"),
+      url("../images/intro-card-2-mobile@2x.png"),
+      url("../images/intro-card-2-mobile@2x.png"),
+      url("../images/intro-bg-ornament.svg");
+  }
+
+  @media (min-width: 750px) {
+    background-position:
+      top 24px right -102px,
+      top 121px right -59px,
+      top -115px right -52px,
+      top 38px right 16px,
+      right -20px;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+    padding-bottom: 124px;
+
+    background-image:
+      url("../images/intro-card-1-tablet.png"),
+      url("../images/intro-card-2-tablet.png"),
+      url("../images/intro-card-3-tablet.png"),
+      url("../images/intro-card-4-tablet.png"),
+      url("../images/intro-card-4-small-tablet.png"),
+      url("../images/intro-bg-ornament.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position:
+      bottom 27px right 2px,
+      bottom 140px right 151px,
+      bottom 205px right -54px,
+      bottom 39px right 20px,
+      bottom 44px right -97px,
+      327px -29px;
+    background-size:
+      401px 537px,
+      205px 218px,
+      205px 218px,
+      206px 217px,
+      154px 163px,
+      729px 519px;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../images/intro-card-1-tablet@2x.png"),
+        url("../images/intro-card-2-tablet@2x.png"),
+        url("../images/intro-card-3-tablet@2x.png"),
+        url("../images/intro-card-4-tablet@2x.png"),
+        url("../images/intro-card-4-small-tablet@2x.png"),
+        url("../images/intro-bg-ornament.svg");
+    }
+  }
+
+  @media (min-width: 1050px) {
+    background-position:
+      bottom 27px right 2px,
+      bottom 140px right 151px,
+      bottom 205px right -54px,
+      bottom 39px right 20px,
+      bottom 44px right -97px,
+      top right;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 261px;
+
+    background-image:
+      url("../images/intro-card-1.png"),
+      url("../images/intro-card-2.png"),
+      url("../images/intro-card-3.png"),
+      url("../images/intro-card-4.png"),
+      url("../images/intro-card-5.png"),
+      url("../images/intro-card-6.png"),
+      url("../images/intro-bg-ornament.svg");
+    background-position:
+      top 59px right 113px,
+      top 419px right 455px,
+      top 292px right 65px,
+      top 614px right 207px,
+      top 612px right -132px,
+      top 292px right -275px,
+      top right -42px;
+    background-size:
+      713px 736px,
+      392px 415px,
+      392px 415px,
+      393px 415px,
+      392px 415px,
+      392px 415px,
+      1017px 723px;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+      url("../images/intro-card-1@2x.png"),
+      url("../images/intro-card-2@2x.png"),
+      url("../images/intro-card-3@2x.png"),
+      url("../images/intro-card-4@2x.png"),
+      url("../images/intro-card-5@2x.png"),
+      url("../images/intro-card-6@2x.png"),
+      url("../images/intro-bg-ornament.svg");
+    }
+  }
+}
+
+.intro__wrapper {
+  @include container;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.intro__heading {
+  @include h1;
+
+  max-width: 270px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding-left: 5px;
+
+  @media (min-width: $tablet) {
+    max-width: 340px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 540px;
+    margin-left: -6px;
+    margin-bottom: 17px;
+  }
+}
+
+.intro__text {
+  @include text(0.8, $blue, 24px, 18px);
+
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  text-align: center;
+  font-weight: 400;
+
+  @media (min-width: $tablet) {
+    max-width: 360px;
+    margin: 0;
+    margin-bottom: 49px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 500px;
+    margin-left: -4px;
+    margin-bottom: 56px;
+    font-size: 24px;
+    line-height: 45px;
+  }
+}
+
+.intro__special {
+  font-weight: 500;
+}
+
+.intro__link {
+  @include text(0.8, $blue, 24px, 18px);
+
+  text-decoration: none;
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 45px;
+  }
+}
+
+.intro__wrap {
+  @include flex(center);
+
+  flex-direction: column;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    margin-bottom: 120px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 216px;
+  }
+}
+
+.intro__button {
+  @include button-clear;
+  @include button;
+
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet) {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 64px;
+  }
+}
+
+.intro__phone {
+  @include text(0.8, $blue, 18px, 15px);
+  text-decoration: none;
+
+  @media (min-width: $tablet) {
+    margin-top: 2px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.intro__description {
+  @include text(0.6, $blue-2, 20px, 14px);
+
+  position: relative;
+  max-width: 260px;
+  margin: 0 auto;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 2px;
+    background-color: rgba($blue, 0.6);
+  }
+
+  @media (min-width: $tablet) {
+    max-width: 100%;
+    margin-left: 0;
+    padding-left: 60px;
+    text-align: left;
+
+    &::before {
+      top: 36%;
+      bottom: 0;
+      left: 0%;
+      transform: translate(0);
+      width: 50px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 76px;
+    font-size: 18px;
+    line-height: 26px;
+
+    &::before {
+      width: 64px;
+      height: 2px;
+      left: -14px;
+      background-color: rgba($blue, 0.8);
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.cooperation {
+  @include container;
+
+  margin-bottom: 31px;
+
+  // @media (min-width: $tablet) {
+
+  // }
+
+  // @media (min-width: $desktop) {
+
+  // }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 61px;
+  }
+}
+
+.cooperation__heading {
+  @include h2;
+
+  font-size: 20px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet) {
+    font-size: 22px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 49px;
+  }
+}
+
+.cooperation__wrapper {
+  text-align: center;
+}
+
+.cooperation__title {
+  @include h5(1, $red);
+
+  margin-bottom: 4px;
+  line-height: 22px;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.cooperation__images {
+  width: 297px;
+  height: 219px;
+
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet) {
+    width: 284px;
+    height: 209px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 478px;
+    height: 352px;
+  }
+}
+
+.cooperation__list {
+  @include list;
+
+  position: relative;
+}
+
+.cooperation__text {
+  @include text;
+
+  line-height: 20px;
+
+  & span {
+    @include text;
+
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 26px;
+
+    & span {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+}

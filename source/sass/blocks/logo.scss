@@ -1,0 +1,28 @@
+.logo {
+  display: block;
+}
+
+.logo__item {
+  &--blue {
+    color: $blue-logo;
+  }
+
+  &--white {
+    color: $lighten;
+  }
+
+  @media (min-width: $tablet) {
+    width: 159px;
+    height: 38px;
+    margin-left: -2px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 159px;
+    height: 38px;
+  }
+}
+
+.first-letter {
+  color: $blue-5;
+}

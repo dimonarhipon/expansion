@@ -1,0 +1,15 @@
+.site-positions__heading {
+  @include h3;
+
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+
+    @include h3(45px, 1, $blue-2, 18px);
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+  }
+}

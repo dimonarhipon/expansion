@@ -1,0 +1,146 @@
+.evaluation {
+  @include container;
+
+  position: relative;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 100%;
+    margin-bottom: 73px;
+  }
+}
+
+.evaluation__heading {
+  @include h2;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 33px;
+  }
+}
+
+.evaluation__wrapper {
+  @media (min-width: $tablet) {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+.evaluation__wrap {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    max-width: 610px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 730px;
+    margin-bottom: 40px;
+  }
+}
+
+.evaluation__text {
+  @include text(0.9, $blue, 20px);
+
+  margin-bottom: 10px;
+}
+
+.evaluation__text--addition {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.evaluation__holder {
+  @media (min-width: $tablet) {
+    @include flex;
+
+    flex-wrap: nowrap;
+  }
+
+  @media (min-width: $desktop) {
+    align-items: flex-start;
+  }
+}
+
+.evaluation__list {
+  @include list;
+
+  @media (min-width: $tablet) {
+    max-width: 400px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 730px;
+  }
+}
+
+.evaluation__item {
+  @include flex(flex-start);
+
+  flex-wrap: nowrap;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet) {
+    align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 16px;
+  }
+}
+
+.evaluation__icon {
+  min-width: 22px;
+  margin-right: 14px;
+
+  @media (min-width: $tablet) {
+    min-width: 24px;
+    height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 34px;
+    height: 34px;
+  }
+}
+
+.evaluation__element {
+  @include text(0.7, $blue, 20px);
+
+  margin-bottom: 0;
+}
+
+.evaluation__visual {
+  @media (min-width: $tablet) {
+    position: absolute;
+    right: 0;
+    bottom: 20px
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -60px;
+  }
+}
+
+.evaluation__images {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+
+    width: 337px;
+    height: 280px;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 638px;
+    height: 406px;
+  }
+}

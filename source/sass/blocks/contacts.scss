@@ -1,0 +1,100 @@
+.contacts {
+  @include container;
+
+  position: relative;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    @include flex(flex-start);
+
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 90px;
+  }
+}
+
+.contacts__wrap {
+  @media (min-width: $tablet) {
+    width: 45.83%;
+    margin-left: auto;
+  }
+}
+
+.contacts__heading {
+  @include h2;
+
+  font-size: 20px;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 504px;
+  }
+}
+
+.contacts__text {
+  @include text;
+
+  margin-bottom: 11px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 400px;
+  }
+}
+
+.contacts__image {
+  @include image;
+
+  margin-bottom: 12px;
+  border-radius: 7px;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 0;
+    left: 54px;
+
+    width: calc(50% - 53px);
+    height: auto;
+    border-radius: 8px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 264px;
+
+    width: auto;
+    max-width: calc(50% - 30px);
+    height: auto;
+  }
+}
+
+.contacts__inner {
+  @include flex;
+
+  align-items: flex-start;
+
+  @media (min-width: $tablet) {
+    flex-direction: column;
+  }
+}
+
+.contacts__address {
+  @media (min-width: $tablet) {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 29px;
+  }
+}
+
+// .contacts__socials {
+// }

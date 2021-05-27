@@ -1,0 +1,7 @@
+.menu {
+  &--closed {
+    .menu__navigation {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,165 @@
+@mixin container {
+  padding-left: 28px;
+  padding-right: 28px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    max-width: 1170px;
+    padding: 0 54px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 1170px;
+    padding: 0 265px;
+  }
+}
+
+@mixin image {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+@mixin list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button-clear {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0;
+  border: none;
+  vertical-align: middle;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-decoration: none;
+  color: $lighten;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin button {
+  width: 169px;
+  padding: 19px;
+  border-radius: 5px;
+  background-color: $red;
+
+  @media (min-width: $desktop) {
+    width: 194px;
+    padding: 24px;
+  }
+}
+
+@mixin flex($space: space-between) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: $space;
+}
+
+@mixin h1 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.013em;
+  text-transform: uppercase;
+  color: $blue;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 64px;
+    line-height: 72px;
+  }
+}
+
+@mixin h2($line-height: 24px, $alfa: 1, $color: $blue, $size: 20px) {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: $size;
+  line-height: $line-height;
+  text-align: center;
+  color: rgba($color, $alfa);
+
+  @media (min-width: $tablet) {
+    margin-bottom: 12px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 10px;
+    font-size: 34px;
+    line-height: 45px;
+  }
+}
+
+@mixin h3($line-height: 19px, $alfa: 1, $color: $blue, $size: 16px) {
+  margin-top: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: $size;
+  line-height: $line-height;
+  text-align: center;
+  color: rgba($color, $alfa);
+}
+
+@mixin h4($alfa: 0.9, $color: $blue) {
+  margin-top: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 45px;
+  text-align: center;
+  color: rgba($color, $alfa);
+}
+
+@mixin h5($alfa: 0.9, $color: $blue-2, $line-height: 18px) {
+  margin-top: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: $line-height;
+  text-align: center;
+  color: rgba($color, $alfa);
+}
+
+@mixin text($alfa: 0.8, $color: $blue, $line-height: 21px, $size: 14px) {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: $size;
+  line-height: $line-height;
+  color: rgba($color, $alfa);
+
+  @media (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

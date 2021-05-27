@@ -1,0 +1,28 @@
+.address {
+  font-style: normal;
+}
+
+.address__title {
+  @include h5;
+
+  margin-bottom: 6px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 13px;
+  }
+}
+
+.address__list {
+  @include list;
+}
+
+.address__item {
+  margin-bottom: 6px;
+}
+
+.address__link {
+  @include text;
+
+  margin-bottom: 0;
+  text-decoration: none;
+}

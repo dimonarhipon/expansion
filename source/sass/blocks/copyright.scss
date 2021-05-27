@@ -1,0 +1,13 @@
+.copyright {
+  display: block;
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: $lighten;
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

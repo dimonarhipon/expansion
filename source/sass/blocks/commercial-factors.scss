@@ -1,0 +1,29 @@
+.commercial-factors {
+  @include container;
+
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet) {
+    max-width: 1170px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 54px;
+  }
+}
+
+.commercial-factors__heading {
+  display: none;
+
+  @include h4;
+
+  @media (min-width: $tablet) {
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 27px;
+    font-size: 22px;
+  }
+}

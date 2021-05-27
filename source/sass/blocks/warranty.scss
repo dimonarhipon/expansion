@@ -1,0 +1,81 @@
+.warranty__wrapper {
+  @include container;
+
+  @media (min-width: $tablet) {
+    max-width: 969px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 969px;
+    margin-bottom: 55px;
+  }
+}
+
+.warranty__heading {
+  @include h2;
+
+  font-size: 20px;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet) {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 36px;
+    margin-bottom: 37px; 
+  }
+}
+
+.warranty__list {
+  @include list;
+  @include flex;
+
+  max-width: 445px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    max-width: 758px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 969px;
+  }
+}
+   
+.warranty__item {
+  flex-grow: 10;
+  min-height: 118px;
+  width: 150px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    width: 190px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 250px;
+    margin-bottom: 30px;
+  }
+}
+
+.warranty__icon {
+  @media (min-width: $tablet) {
+    margin-bottom: 9px;
+  }
+}
+
+.warranty__text {
+  @include text(1, $blue, 20px);
+
+  @media (min-width: $tablet) {
+    max-width: 170px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 210px;
+  }
+}

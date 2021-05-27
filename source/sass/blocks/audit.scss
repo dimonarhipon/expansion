@@ -1,0 +1,5 @@
+.audit__heading {
+  @include h2(24px, 1, $blue, 16px);
+
+  margin-bottom: 14px;
+}
